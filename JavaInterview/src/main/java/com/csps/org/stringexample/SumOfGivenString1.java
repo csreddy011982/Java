@@ -1,10 +1,9 @@
-package com.csps.org.miller;
+package com.csps.org.stringexample;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 //Write a program to sum all the numbers in the given string.
-public class SumOfGivenString {
+public class SumOfGivenString1 {
 
 	public static void main(String[] args) {
 		Scanner scannerString = new Scanner(System.in);

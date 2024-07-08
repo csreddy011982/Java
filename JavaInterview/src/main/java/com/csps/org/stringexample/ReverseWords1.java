@@ -1,10 +1,10 @@
-package com.csps.org.miller;
+package com.csps.org.stringexample;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
 //Write a program to reverse the word in the given string.
-public class ReverseWords {
+public class ReverseWords1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,4 +1,4 @@
-package com.csps.org.miller;
+package com.csps.org.threadexample;
 
 public class multithreaded_programing {
 
