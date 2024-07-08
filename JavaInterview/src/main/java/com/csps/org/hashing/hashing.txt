@@ -1,0 +1,78 @@
+Hashing
+
+Hashing is a process of converting an object into integer form by using the method hashCode().
+
+It’s necessary to write the hashCode() method properly for better performance of HashMap
+
+
+hashCode() method: hashCode() method is used to get the hash code of an object.
+hashCode() method of the object class returns the memory reference of an object in integer form.
+Definition of hashCode() method is public native hashCode(). It indicates the implementation of hashCode() is
+native because there is not any direct method in java to fetch the reference of the object.
+It is possible to provide your implementation of hashCode().
+In HashMap, hashCode() is used to calculate the bucket and therefore calculate the index.
+
+equals() method: This method is used to check whether 2 objects are equal or not.
+ This method is provided by the Object class. You can override this in your class to provide your implementation.
+HashMap uses equals() to compare the key to whether they are equal or not.
+ If the equals() method return true, they are equal otherwise not equal
+
+ HashMap map = new HashMap();
+ map.put(new Key("vishal"), 20)
+
+Hash MAP..?
+
+It provides the basic implementation of the Map interface of Java.
+ HashMap in Java stores the data in (Key, Value) pairs, and you can access them by
+ an index of another type (e.g. an Integer).
+ One object is used as a key (index) to another object (value).
+ If you try to insert the duplicate key in HashMap, it will replace the element of the corresponding key.
+ ------------------------------------
+What is HashMap?
+Java HashMap is similar to HashTable, but it is unsynchronized.
+It allows to store the null keys as well, but there should be only one null key object and
+there can be any number of null values. This class makes no guarantees as to the order of the map.
+To use this class and its methods, you need to import java.util.HashMap package or its superclass.
+
+Keys and value can’t be primitive datatype. Key in Hashmap is valid if it implements hashCode() and equals() method ,
+it should also be immutable (immutable custom object ) so that hashcode and equality remains constant.
+Value in hashmap can be any wrapper class, custom objects, arrays, any reference type or even null .
+
+For Example : Hashmap can have array as value but not as key.
+
+Characteristics of Java HashMap:
+----------------------------------
+A HashMap is a data structure that is used to store and retrieve values based on keys.
+Some of the key characteristics of a hashmap include:
+
+Fast access time: HashMaps provide constant time access to elements, which means that retrieval and insertion
+of elements are very fast, usually O(1) time complexity.
+Uses hashing function: HashMaps uses a hash function to map keys to indices in an array.
+This allows for a quick lookup of values based on keys.
+Stores key-value pairs: Each element in a HashMap consists of a key-value pair.
+ The key is used to look up the associated value.
+Supports null keys and values: HashMaps allow for null values and keys. This means that a null
+key can be used to store a value, and a null value can be associated with a key.
+Not ordered: HashMaps are not ordered, which means that the order in which elements are added to the map
+is not preserved. However, LinkedHashMap is a variation of HashMap that preserves the insertion order.
+Allows duplicates: HashMaps allow for duplicate values, but not duplicate keys. If a duplicate key is added,
+ the previous value associated with the key is overwritten.
+Thread-unsafe: HashMaps are not thread-safe, which means that if multiple threads access the same hashmap simultaneously,
+ it can lead to data inconsistencies. If thread safety is required, ConcurrentHashMap can be used.
+Capacity and load factor: HashMaps have a capacity, which is the number of elements that it can hold,
+and a load factor, which is the measure of how full the hashmap can be before it is resized.
+
+
+Java HashMap Constructors
+HashMap provides 4 constructors and the access modifier of each is public which are listed as follows:
+HashMap() --> It is the default constructor which creates an instance of HashMap with an initial capacity
+of 16 and a load factor of 0.75.  HashMap<Integer, String> hm1 = new HashMap<>();
+HashMap(int initialCapacity)--> It creates a HashMap instance with a specified initial capacity and
+load factor of 0.75.  HashMap<Integer, String> hm1 = new HashMap<>(10)
+HashMap(int initialCapacity, float loadFactor) --> It creates a HashMap instance with a specified
+initial capacity and specified load factor.   HashMap<Integer, String> hm1= new HashMap<>(5, 0.75f);
+HashMap(Map map) -->It creates an instance of HashMap with the same mappings as the specified map.
+Map<Integer, String> hm1 = new HashMap<>();
+HashMap<Integer, String> hm2  = new HashMap<Integer, String>(hm1);
+ Adding Elements in HashMap in Java --> put() method
+

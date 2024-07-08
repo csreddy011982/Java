@@ -1,0 +1,16 @@
+Deep Copy: it creates copy of each object inside of the class.
+Shallow copy: the pointer points to the same copy of objects of the class
+
+Below is the tabular Difference between the Shallow Copy and Deep Copy:
+-------------------------------------------------------------------------
+Shallow Copy stores the references of objects to the original memory address.
+Deep copy stores copies of the object’s value.
+
+Shallow Copy reflects changes made to the new/copied object in the original object.
+Deep copy doesn’t reflect changes made to the new/copied object in the original object.
+
+Shallow Copy stores the copy of the original object and points the references to the objects.
+Deep copy stores the copy of the original object and recursively copies the objects as well.
+
+A shallow copy is faster.
+Deep copy is comparatively slower.

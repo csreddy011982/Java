@@ -1,0 +1,5 @@
+Difference between ArrayList and LinkedList in the java collection framework?
+ArrayList --> This class implements a List interface. Therefore, this acts as a list.
+LinkedList --> This class implements both the List interface and the Deque interface. Therefore, it can act as a list and a deque.
+ArrayList--> This class works better when the application demands storing the data and accessing it.
+LinkedList -->This class works better when the application demands manipulation of the stored data.
