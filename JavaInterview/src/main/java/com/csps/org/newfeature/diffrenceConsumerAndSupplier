@@ -1,0 +1,14 @@
+CONSUMER
+Is used in the scenarios where we send an input but not expect any return value from it
+The single abstract method(SAM) name is accept()
+It takes one type parameter which indicates input parameter and return parameter is always void
+It has no static methods but has 1 default method andThen() for chaining
+It is like setter method inside our POJO classes
+
+SUPPLIER
+Is used in the scenarios where we don’t send any input but expecting return value from it
+The single abstract method(SAM) name is get()
+It takes one type parameter which indicates output parameter and input parameter is not needed
+It has no static and default methods inside it
+It is like getter method inside our POJO classes
+

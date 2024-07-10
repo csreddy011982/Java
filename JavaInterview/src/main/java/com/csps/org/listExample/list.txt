@@ -1,2 +1,0 @@
-Multipile record insert :
-It is carried out using the functions namely addBatch() and executeBatch() methods.

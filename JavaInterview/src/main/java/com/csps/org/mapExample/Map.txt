@@ -1,0 +1,17 @@
+Difference Between ConcurrentHashMap and SynchronizedHashMap..?
+ConcurrentHashMap is a class which implements the ConcurrentMap interface.
+ConcurrentHashMap is thread-safe therefore multiple threads can operate on a single object without any problem
+In ConcurrentHashMap, the Object is divided into a number of segments according to the concurrency level
+By default, it allows 16 thread to read and write from the Map without any synchronization
+
+Synchronized HashMap: Java HashMap is a non-synchronized collection class.
+If we need to perform thread-safe operations on it then we must need to synchronize it explicitly. The synchronizedMap()
+method of java.util.Collections class is used to synchronize it. It returns a synchronized (thread-safe) map backed by the specified map.
+
+https://www.mygreatlearning.com/blog/spring-boot-interview-questions/#java-spring-boot-interview-questions
+
+https://www.javaguides.net/2018/11/java-string-interview-questions-and-answers.html
+
+https://spring.io/guides
+
+https://scaledagileframework.com/

@@ -1,0 +1,14 @@
+PREDICATE
+Is used for checking the conditions on given input and return boolean value
+The single abstract method(SAM) name is test()
+ It takes one type parameter which indicates input parameter and return parameter is always boolean
+ It has a static method called isEqual() which will check the equality of the 2 values/objects.
+ It has 3 default methods for chaining namely and(), or() & negate()
+
+FUNCTION
+Is used for executing business logic for the input and return any type of output.
+The single abstract method(SAM) name is apply()
+It takes 2 type parameters which indicates input parameter and return parameter
+It has a static method called identity() which will return the same as input given.
+It has 2 default methods for chaining namely andThen() & compose()
+

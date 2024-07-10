@@ -1,0 +1,83 @@
+
+To fetch even Numbered row: SELECT * FROM table_name WHERE column_name % 2 = 0
+To fetch odd Numbered row: SELECT * FROM table_name WHERE column_name % 2 = 1
+SELECT * FROM EMP1 INNER JOIN EMP2 ON EMP1.EMPNO=EMP2.EMPNO WHERE (EMP1.empno %2)<> 0
+SELECT * FROM EMP1 INNER JOIN EMP2 ON EMP1.EMPNO=EMP2.EMPNO WHERE (EMP1.empno %2)= 0
+SELECT * FROM Student WHERE student_id % 2 != 0;  --> odd rows
+SELECT * from Student ORDER BY GPA DESC LIMIT 5;
+SELECT * from Student ORDER BY GPA DESC LIMIT n-1,1;;
+SELECT * FROM Student s1 WHERE 4 = ( SELECT COUNT(DISTINCT (s2.GPA)) FROM Student s2   WHERE s2.GPA >= s1.GPA); (determine the 5th highest
+ GPA without using LIMIT keyword.)
+ https://www.geeksforgeeks.org/sql-query-interview-questions/?ref=header_search
+Innjer join
+outerjoin
+
+CREATE DATABASE mydatabase;
+CHAR: Fixed-length character data type where the storage size is predefined.
+ Trailing spaces are padded to reach the defined length.
+VARCHAR: Variable-length character data type where the storage size depends on the actual data length.
+ No padding of spaces is done.
+
+ default port 3306
+ There are 5 types of tables present in MySQL.
+ Heap table, merge table, MyISAM table, INNO DB table, ISAM table
+ LENGTH is byte count whereas CHAR_LENGTH is character count.
+ SELECT CHAR_LENGTH(column_name) FROM table_name;
+ SELECT LENGTH(column_name) FROM table_name;
+ How to get the top 10 rows?--> SELECT * FROM table_name LIMIT 0,10;
+ the DISTINCT keyword allows for the removal of all duplicate records and the retrieval of unique records
+ SELECT DISTINCT colu1, colum2  FROM table_name;
+
+What types of relationships are used in MySQL?
+There are three types of relationships used in MySQL.
+One-to-one: Elements with a one to one relationship can be included as columns in the table.
+One-to-many: One to many or many to one relationships both are same. It will occur when one row in a
+table is related to multiple rows in different table.
+Many-to-many: Many rows in a table are related to many rows in different table is called many to many relationship.
+
+What is join? Tell different join in MySQL.
+Joins are used to connect two or more tables. It returns only same values in all tables.
+There are four different ways to join MySQL tables.
+
+INNER JOIN: The INNER JOIN keyword selects all rows from both tables as long as the condition is satisfied.
+This keyword will create the result set by combining all rows from both the tables where the condition satisfies i.e.
+ the value of the common field will be the same.
+
+LEFT JOIN: This join returns all the rows of the table on the left side of the join and matching rows for the
+ table on the right side of the join. For the rows for which there is no matching row on the right side,
+ the result set will be null. LEFT JOIN is also known as LEFT OUTER JOIN
+
+RIGHT JOIN: RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the
+join and matching rows for the table on the left side of the join. For the rows for which there is no matching
+row on the left side, the result set will contain null. RIGHT JOIN is also known as RIGHT OUTER JOIN.
+
+FULL JOIN: FULL JOIN creates the result set by combining the results of both LEFT JOIN and RIGHT JOIN.
+The result set will contain all the rows from both tables. For the rows for which there is no matching,
+the result set will contain NULL values.
+SELECT SUBSTRING(FIRST_NAME, 1, 3)  FROM Student;  --> first 3 character of the name
+
+SELECT Student.FIRST_NAME,    Student.LAST_NAME,    Scholarship.SCHOLARSHIP_AMOUNT,    Scholarship.SCHOLARSHIP_DATE
+FROM  Student INNER JOIN   Scholarship ON Student.STUDENT_ID = Scholarship.STUDENT_REF_ID;
+
+What is a primary key? How to drop the primary key in MySQL?
+A primary key in MySQL is a single field or a group of fields that are used to uniquely identify each record in a table.
+A primary key cannot be null or empty. ALTER TABLE statement is used to delete a primary key from a table.
+
+What is the main difference between the primary key and the candidate key?
+The primary key uniquely identified each row of a table. only one primary key is available for a table.
+A primary is also a candidate key.
+Candidate key that can be used for all foreign key references.
+
+ What is the difference between DELETE and TRUNCATE commands in MySQL?
+DELETE Command is used to delete rows from the table depending on given the condition.
+TRUNCATE command is used to DELETE all rows from the table.
+ DELETE command is a Data Manipulation Language command. TRUNCATE command is a Data Definition Language command.
+
+A Foreign key is a field that can uniquely identify each row in another table. And this constraint is used to specify a field as a Foreign key.
+That is this field points to the primary key of another table. This usually creates a kind of link between the two tables.
+
+ACID-->
+A transaction is a single logical unit of work that accesses and possibly modifies the contents of a database.
+ Transactions access data using read and write operations.
+ In order to maintain consistency in a database, before and after the transaction, certain properties are followed.
+ These are called ACID properties.

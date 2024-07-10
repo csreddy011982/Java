@@ -3,3 +3,15 @@ ArrayList --> This class implements a List interface. Therefore, this acts as a 
 LinkedList --> This class implements both the List interface and the Deque interface. Therefore, it can act as a list and a deque.
 ArrayList--> This class works better when the application demands storing the data and accessing it.
 LinkedList -->This class works better when the application demands manipulation of the stored data.
+
+How to Remove Duplicates from ArrayList in Java ..?
+--------------------------------------------------
+ if (!newList.contains(element)) {  newList.add(element);  }
+ // Construct a new list from the set constucted from elements
+ // of the original list
+ List<Integer> newList = list.stream().distinct().collect(Collectors.toList());
+
+
+ Multipile record insert :
+ --------------------------
+ It is carried out using the functions namely addBatch() and executeBatch() methods.

@@ -1,0 +1,19 @@
+DEFAULT METHODS IN INTERFACES
+STATIC METHODS IN INTERFACES
+OPTIONAL TO DEAL WITH NULLS : java.util.Optional<T>
+LAMBDA (Λ) EXPRESSION : bring benefits of functional programming into java
+        is a block of code that can pass around so it can be executed later. it is an anonymous function.
+        doesn't have name ,return type and access modifiers.
+        with out param ()->{sop("")}
+        with param (input)->{sop(input)}
+
+FUNCTIONAL INTERFACE : Only one abstract method in interface with annotation @FunctionalInterface
+    java.util.function.Predicate,Funciton,Cusumer.. Etc
+    Function<Interger(input),Interger(output)>
+METHOD REFERENCES
+CONSTRUCTOR REFERENCES
+STREAMS API
+NEW DATE AND TIME API(JODA)
+COMPLETABLEFUTURE
+MAP ENHANCEMENTS
+OTHER MISCELLANEOUS UPDATES

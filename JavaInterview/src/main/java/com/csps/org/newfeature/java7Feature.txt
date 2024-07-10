@@ -1,0 +1,18 @@
+THE TRY-WITH-RESOURCES STATEMENT --> try(BBufferedReader br = new BufferedReader(new FileReader("C:/eazybytes.txt"));)
+{} br.close will happen automatically  new interface java.lang.AutoCloseable --> close() method
+SUPPRESSED EXCEPTIONS // Run time exceptions avoid ex.getSuppressed()
+CATCHING MULTIPLE EXCEPTIONS --> using pipe (|)
+   catch (NullPointerException | ArrayIndexOutOfBoundsException | ClassCastException ex) {
+RETHROWING EXCEPTIONS WITH TYPE CHECKING
+EASIER EXCEPTION HANDLING FOR REFLECTIONS --> java.lang.ReflectiveOperationException  super class
+OBJECTS CLASS & NULL CHECKS --> java.util.Objects
+CLOSE METHOD INSIDE URLCLASSLOADER
+@SafeVarargs -->that methods will not cause heap pollution.
+ENHANCEMENTS TO FILES & DIRECTORIES java.nio.file.path, file,paths
+WATCHSERVICE: interface java.nio.file.WatchService
+BINARY LITERALS
+STRING IN SWITCH STATEMENT
+TYPE INFERENCE/DIAMOND OPERATOR : Map<String,Integer> inputMap = new HashMap<>();
+USING UNDERSCORE IN NUMERIC LITERALS
+JDBC IMPROVEMENTS
+fork & Join framework

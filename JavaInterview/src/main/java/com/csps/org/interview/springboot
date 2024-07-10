@@ -1,0 +1,22 @@
+Spring Boot Flow Architecture
+Spring boot flow architecture
+-----------------------------
+Fig 2 – Spring boot flow architecture
+
+Explanation:
+
+The Client makes an HTTP request(GET, PUT, POST, etc.)
+The HTTP request is forwarded to the Controller. The controller maps the request.
+ It processes the handles and calls the server logic.
+The business logic is performed in the Service layer. The spring boot performs all the logic over
+the data of the database which is mapped to the spring boot model class through Java Persistence Library(JPA).
+The JSP page is returned as Response from the controller.
+
+Spring Boot Layers
+------------------
+The spring boot consists of the following four layers:
+
+Presentation Layer – Authentication & Json Translation
+Business Layer – Business Logic, Validation & Authorization
+Persistence Layer – Storage Logic
+Database Layer – Actual Database

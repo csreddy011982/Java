@@ -1,0 +1,41 @@
+Find
+select * from Employee order by salary desc limit +n-1, 1;
+select * from employee where row_count%=1 --> will get odd number records
+selecct em.name,ad.addess from employess em, address ad where em.id == ad.id and ad.id==null
+
+
+customer
+id,name
+product
+id,name
+elec_order
+date,customer-id,product_id
+seletc number of sony playstation products brought by the customers
+number of products each customer bought
+
+
+Table – EmployeeDetails
+
+EmpId	FullName	ManagerId
+121		John Snow		321
+321		Walter White	986
+421		Kuldeep Rana	876
+654 	Rakesh			133
+765 	Rajesh			421
+
+Table – EmployeeSalary
+
+EmpId	Project	Salary	Variable
+121		P1		9000	500
+421		P1		9000	700
+765		P2		15000	900
+321		P1		9000	400
+654		P3		8000	1000
+
+fetch FullName,TotalSalary of employee's whose TotalSalary is greater than 9500
+TotalSalary = Salary + Variable
+
+
+
+select fullame, total_sa from EmployeeDetails as ed,
+ EmployeeSalary as es where (ed.empId= es.empId  and total_salary =salary+variable > 9500 as total_salary)

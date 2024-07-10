@@ -1,0 +1,14 @@
+COLLECTIONS
+A collection is an in-memory data structure that holds all the values the data structure currently has
+A collection is eagerly constructed and elements can be added or removed
+Collections doesn’t use functional interfaces using lambda expressions
+They are non-consumable i.e. can be traversable  multiple times without creating it again.
+Collections are iterated using external loops like   for, while
+
+
+STREAMS
+A stream does not store its elements. They may be stored in an underlying collection or generated on demand
+Stream is like a lazily constructed collection and elements inside streams can’t be added or removed.
+Streams uses lot of functional interfaces using lambda expressions
+Streams are consumable i.e. to traverse the stream, it needs to be created every time.
+Streams are iterated internally based on the operation mentioned like map, filter.

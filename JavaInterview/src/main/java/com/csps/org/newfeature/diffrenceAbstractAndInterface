@@ -1,0 +1,16 @@
+INTERFACE WITH DEFAULT
+----------------------
+Interfaces with default methods can’t have a constructor, state and behavior
+There is no chance for creating instance variables
+Static and instance blocks are not allowed
+They can be used to write lambda expressions if they have only abstract method inside them
+Inside them we can’t override Object class methods
+
+ABSTRACT CLASS
+--------------------
+Abstract classes can have a constructor, state and behavior
+Instance variables can be created inside abstract classes
+Static and instance blocks are allowed
+Can’t be leveraged to write lambda expressions
+Inside them we can override Object class methods
+
