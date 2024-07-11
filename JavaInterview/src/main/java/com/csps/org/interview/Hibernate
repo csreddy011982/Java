@@ -1,0 +1,15 @@
+College
+ - String collegeId
+ - String Name
+ - String Address
+ - List<Student> students
+ Student
+   - String StudentId
+   - String StudentName
+   - String group
+   - College college  - FK
+ has context menu
+select * from Student inner join college on student.id=college.id;
+
+ @one-to-many(collegeID
+ @many-to-one(
